@@ -1,8 +1,7 @@
 package database
 
 import (
-	"database/sql"
-	"fmt"
+	
 	"time"
 
 	"github.com/AntipasBen23/lorawan-tree-monitor/internal/models"
