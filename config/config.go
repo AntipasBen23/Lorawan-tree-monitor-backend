@@ -23,7 +23,7 @@ func Load() *Config {
 
 	return &Config{
 		DatabaseURL:      getEnv("DATABASE_URL", "postgres://postgres:postgres@localhost:5432/lorawan_monitor?sslmode=disable"),
-		ServerPort:       getEnv("SERVER_PORT", "8080"),
+		ServerPort:       getEnv("PORT", "8080"),
 		TokensPerReading: getEnvAsInt("TOKENS_PER_READING", 10),
 		WebhookSecret:    getEnv("WEBHOOK_SECRET", "your-secret-key"),
 	}
